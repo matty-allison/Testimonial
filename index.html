@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testermoinal</title>
+    <link rel="stylesheet" href="./testermoinal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Set up your HTML -->
+    <div class="owl-carousel">
+      <div class="comment">
+        <img
+          src="./1005-5760x3840.jpg"
+          alt="Photos"
+          style="width: 100px; height: 100px"
+        />
+        <div class="owl-items">
+          <h2 class="heading">Name</h2>
+          <h3 class="heading line-2">-Title-</h3>
+          <q
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            atque cumque eius sit, alias dolore itaque saepe incidunt at
+            deserunt similique officiis repellat inventore, consectetur fugit,
+            laboriosam nesciunt culpa perspiciatis?</q
+          >
+        </div>
+      </div>
+      <div class="comment">
+        <img
+          src="./1005-5760x3840.jpg"
+          alt="Photos"
+          style="width: 100px; height: 100px"
+        />
+        <div class="owl-items">
+          <h2 class="heading">Name</h2>
+          <h3 class="heading line-2">-Title-</h3>
+          <q
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi in
+            voluptate, architecto saepe esse, inventore tempore eum temporibus,
+            quia corrupti consequuntur rem quae maiores dicta aliquid
+            accusantium officiis? Reiciendis, vel?</q
+          >
+        </div>
+      </div>
+      <div class="comment">
+        <img
+          src="./1005-5760x3840.jpg"
+          alt="Photos"
+          style="width: 100px; height: 100px"
+        />
+        <div class="owl-items">
+          <h2 class="heading">Name</h2>
+          <h3 class="heading line-2">-Title</h3>
+          <q
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ex
+            excepturi molestiae deleniti quaerat perferendis inventore placeat
+            reprehenderit porro ipsum minus, asperiores cupiditate ipsa pariatur
+            aspernatur nulla accusamus maiores optio.</q
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Script tags under here -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+              stagePadding: 0,
+            },
+            500: {
+              items: 1,
+              margin: 50,
+              stagePadding: 100,
+            },
+          },
+          //   autoplay: true,
+        });
+      });
+    </script>
+  </body>
+</html>
